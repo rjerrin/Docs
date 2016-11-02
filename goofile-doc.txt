@@ -1,0 +1,27 @@
+Description : Tool to search for a filetype in a specific domain using google.
+
+Example usage:
+
+$ goofile -d freebsd.org -f pdf
+
+-------------------------------------
+|Goofile v1.5	                    |
+|Coded by Thomas (G13) Richards     |
+|www.g13net.com                     |
+|code.google.com/p/goofile          |
+-------------------------------------
+
+
+Searching in freebsd.org for pdf
+========================================
+
+Files found:
+====================
+
+https://people.freebsd.org/~kan/m_s2885_100.pdf
+https://people.freebsd.org/~wpaul/25248005.pdf
+https://people.freebsd.org/~wpaul/3Com/3c90xb.pdf
+https://people.freebsd.org/~tanimura/docs/4280.pdf
+https://people.freebsd.org/~chuckr/audiotech/dts_specification.pdf
+https://people.freebsd.org/~tanimura/docs/4281.pdf
+https://people.freebsd.org/~wpaul/station/ts440s_serv.pdf
