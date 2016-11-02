@@ -1,0 +1,44 @@
+PKG_PATH="http://mirror.yandex.ru/pub/OpenBSD/6.0/packages/`arch -s`/"
+export PKG_PATH
+
+
+# pkg_add -v  nginx  
+quirks-2.241 signed on 2016-07-26T16:56:10Z
+quirks-2.241: ok
+Ambiguous: choose package for nginx
+a       0: <None>
+        1: nginx-1.10.1
+        2: nginx-1.10.1-lua
+        3: nginx-1.10.1-naxsi
+        4: nginx-1.10.1-passenger
+Your choice: 3
+nginx-1.10.1-naxsi:pcre-8.38p0: ok
+nginx-1.10.1-naxsi: ok
+The following new rcscripts were installed: /etc/rc.d/nginx
+See rcctl(8) for details.
+Look in /usr/local/share/doc/pkg-readmes for extra documentation.
+Extracted 4974009 from 4976236
+
+
+
+# pkg_add -v wget
+Update candidates: quirks-2.241 -> quirks-2.241
+quirks-2.241 signed on 2016-07-26T16:56:10Z
+wget-1.18:libiconv-1.14p3: ok
+wget-1.18:gettext-0.19.7: ok
+wget-1.18:libidn-1.32p1: ok
+wget-1.18:libunistring-0.9.6p0: ok
+wget-1.18:libpsl-0.13.0: ok
+wget-1.18: ok
+Extracted 11360184 from 11362881
+
+
+# wget  http://mirrors.sonic.net/pub/OpenBSD/6.0/ports.tar.gz
+# wget http://mirrors.sonic.net/pub/OpenBSD/6.0/SHA256.sig
+
+# signify -Cp /etc/signify/openbsd-$(uname -r | cut -c 1,3)-base.pub -x SHA256.sig ports.tar.gz
+Signature Verified
+ports.tar.gz: OK
+
+# cd /usr                                                                                                                                                            
+# tar xzf /root/ports.tar.gz  
